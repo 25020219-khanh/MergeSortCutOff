@@ -29,90 +29,90 @@ Tìm cutoff cho biến thể Merge Sort dùng Insertion Sort ở các đoạn nh
 | Dạng dữ liệu | Kích thước | Cutoff tốt nhất | Trung vị (ms) |
 |---|---:|---:|---:|
 | random | 1.000 | 48 | 0,017 |
-| random | 10.000 | 48 | 0,447 |
-| random | 100.000 | 64 | 5,909 |
-| sorted | 1.000 | 64 | 0,004 |
-| sorted | 10.000 | 64 | 0,079 |
-| sorted | 100.000 | 64 | 1,017 |
-| reverse | 1.000 | 7 | 0,011 |
-| reverse | 10.000 | 16 | 0,120 |
-| reverse | 100.000 | 7 | 1,520 |
-| duplicates | 1.000 | 16 | 0,011 |
-| duplicates | 10.000 | 48 | 0,242 |
-| duplicates | 100.000 | 64 | 2,834 |
+| random | 10.000 | 64 | 0,455 |
+| random | 100.000 | 64 | 6,439 |
+| sorted | 1.000 | 64 | 0,005 |
+| sorted | 10.000 | 48 | 0,080 |
+| sorted | 100.000 | 48 | 1,216 |
+| reverse | 1.000 | 10 | 0,011 |
+| reverse | 10.000 | 16 | 0,136 |
+| reverse | 100.000 | 10 | 1,653 |
+| duplicates | 1.000 | 16 | 0,010 |
+| duplicates | 10.000 | 64 | 0,231 |
+| duplicates | 100.000 | 32 | 2,934 |
 
 ### 4.2. Bảng chi tiết — dữ liệu ngẫu nhiên (random)
 
 | Cutoff | n = 1.000 (ms) | n = 10.000 (ms) | n = 100.000 (ms) |
 |---:|---:|---:|---:|
-| 1 | 0,145 | 0,614 | 7,621 |
-| 4 | 0,030 | 0,571 | 7,099 |
-| 7 | 0,033 | 0,528 | 6,761 |
-| 10 | 0,028 | 0,496 | 6,727 |
-| 16 | 0,023 | 0,499 | 6,334 |
-| 24 | 0,026 | 0,463 | 6,195 |
-| 32 | 0,019 | 0,466 | 6,060 |
-| 48 | **0,017** | **0,447** | 6,082 |
-| 64 | 0,020 | 0,448 | **5,909** |
+| 1 | 0,110 | 0,623 | 8,301 |
+| 4 | 0,055 | 0,603 | 7,835 |
+| 7 | 0,084 | 0,572 | 7,411 |
+| 10 | 0,029 | 0,888 | 7,302 |
+| 16 | 0,029 | 0,600 | 7,060 |
+| 24 | 0,026 | 0,486 | 6,987 |
+| 32 | 0,023 | 0,501 | 6,986 |
+| 48 | **0,017** | 0,458 | 6,664 |
+| 64 | 0,023 | **0,455** | **6,439** |
 
 ### 4.3. Bảng chi tiết — dữ liệu tăng dần (sorted)
 
 | Cutoff | n = 1.000 (ms) | n = 10.000 (ms) | n = 100.000 (ms) |
 |---:|---:|---:|---:|
-| 1 | 0,016 | 0,175 | 2,065 |
-| 4 | 0,010 | 0,137 | 1,538 |
-| 7 | 0,010 | 0,117 | 1,396 |
-| 10 | 0,008 | 0,103 | 1,400 |
-| 16 | 0,007 | 0,102 | 1,233 |
-| 24 | 0,007 | 0,084 | 1,176 |
-| 32 | 0,006 | 0,085 | 1,147 |
-| 48 | 0,005 | 0,080 | 1,120 |
-| 64 | **0,004** | **0,079** | **1,017** |
+| 1 | 0,016 | 0,176 | 2,158 |
+| 4 | 0,011 | 0,140 | 1,637 |
+| 7 | 0,010 | 0,119 | 1,573 |
+| 10 | 0,008 | 0,109 | 1,495 |
+| 16 | 0,007 | 0,105 | 1,918 |
+| 24 | 0,007 | 0,088 | 1,372 |
+| 32 | 0,006 | 0,089 | 1,259 |
+| 48 | 0,006 | **0,080** | **1,216** |
+| 64 | **0,005** | 0,081 | 1,372 |
 
 ### 4.4. Bảng chi tiết — dữ liệu giảm dần (reverse)
 
 | Cutoff | n = 1.000 (ms) | n = 10.000 (ms) | n = 100.000 (ms) |
 |---:|---:|---:|---:|
-| 1 | 0,018 | 0,172 | 2,034 |
-| 4 | 0,012 | 0,142 | 1,599 |
-| 7 | **0,011** | 0,127 | **1,520** |
-| 10 | 0,023 | 0,120 | 1,538 |
-| 16 | 0,012 | **0,120** | 1,562 |
-| 24 | 0,011 | 0,143 | 1,681 |
-| 32 | 0,014 | 0,141 | 1,790 |
-| 48 | 0,014 | 0,187 | 1,893 |
-| 64 | 0,022 | 0,185 | 2,381 |
+| 1 | 0,029 | 0,451 | 2,442 |
+| 4 | 0,012 | 0,292 | 1,795 |
+| 7 | 0,011 | 0,318 | 1,715 |
+| 10 | **0,011** | 0,170 | **1,653** |
+| 16 | 0,012 | **0,136** | 1,689 |
+| 24 | 0,013 | 0,346 | 1,751 |
+| 32 | 0,016 | 0,169 | 1,969 |
+| 48 | 0,033 | 0,212 | 2,032 |
+| 64 | 0,056 | 0,194 | 2,660 |
 
 ### 4.5. Bảng chi tiết — nhiều giá trị trùng (duplicates)
 
 | Cutoff | n = 1.000 (ms) | n = 10.000 (ms) | n = 100.000 (ms) |
 |---:|---:|---:|---:|
-| 1 | 0,020 | 0,400 | 4,455 |
-| 4 | 0,013 | 0,355 | 3,942 |
-| 7 | 0,013 | 0,315 | 3,565 |
-| 10 | 0,011 | 0,283 | 3,548 |
-| 16 | **0,011** | 0,286 | 3,196 |
-| 24 | 0,011 | 0,252 | 3,057 |
-| 32 | 0,011 | 0,254 | 2,940 |
-| 48 | 0,012 | **0,242** | 2,922 |
-| 64 | 0,016 | 0,246 | **2,834** |
+| 1 | 0,022 | 0,391 | 6,079 |
+| 4 | 0,013 | 0,349 | 4,402 |
+| 7 | 0,013 | 0,340 | 3,680 |
+| 10 | 0,011 | 0,292 | 3,785 |
+| 16 | **0,010** | 0,288 | 3,299 |
+| 24 | 0,011 | 0,242 | 3,083 |
+| 32 | 0,012 | 0,246 | **2,934** |
+| 48 | 0,011 | 0,234 | 2,950 |
+| 64 | 0,016 | **0,231** | 3,136 |
 
 ### 4.6. Tốc độ cải thiện so với cutoff = 1 (không dùng Insertion Sort)
 
 | Dạng dữ liệu | Kích thước | Cutoff tốt nhất | Tốc độ cải thiện |
 |---|---:|---:|---:|
-| random | 1.000 | 48 | 8,70× |
-| random | 10.000 | 48 | 1,37× |
+| random | 1.000 | 48 | 6,33× |
+| random | 10.000 | 64 | 1,37× |
 | random | 100.000 | 64 | 1,29× |
-| sorted | 1.000 | 64 | 3,81× |
-| sorted | 10.000 | 64 | 2,22× |
-| sorted | 100.000 | 64 | 2,03× |
-| reverse | 1.000 | 7 | 1,58× |
-| reverse | 10.000 | 16 | 1,43× |
-| reverse | 100.000 | 7 | 1,34× |
-| duplicates | 1.000 | 16 | 1,88× |
-| duplicates | 10.000 | 48 | 1,65× |
-| duplicates | 100.000 | 64 | 1,57× |
+| sorted | 1.000 | 64 | 3,57× |
+| sorted | 10.000 | 48 | 2,19× |
+| sorted | 100.000 | 48 | 1,77× |
+| reverse | 1.000 | 10 | 2,74× |
+| reverse | 10.000 | 16 | 3,32× |
+| reverse | 100.000 | 10 | 1,48× |
+| duplicates | 1.000 | 16 | 2,08× |
+| duplicates | 10.000 | 64 | 1,70× |
+| duplicates | 100.000 | 32 | 2,07× |
 
 ## 5. Phân tích
 
@@ -120,35 +120,42 @@ Tìm cutoff cho biến thể Merge Sort dùng Insertion Sort ở các đoạn nh
 
 | Dạng dữ liệu | Kích thước | Cutoff 7 (ms) | Cutoff 10 (ms) | Chênh lệch |
 |---|---:|---:|---:|---:|
-| random | 1.000 | 0,033 | 0,028 | cutoff 10 nhanh hơn 14,0% |
-| random | 10.000 | 0,528 | 0,496 | cutoff 10 nhanh hơn 6,2% |
-| random | 100.000 | 6,761 | 6,727 | cutoff 10 nhanh hơn 0,5% |
-| sorted | 1.000 | 0,010 | 0,008 | cutoff 10 nhanh hơn 22,4% |
-| sorted | 10.000 | 0,117 | 0,103 | cutoff 10 nhanh hơn 11,5% |
-| sorted | 100.000 | 1,396 | 1,400 | cutoff 7 nhanh hơn 0,3% |
-| reverse | 1.000 | 0,011 | 0,023 | cutoff 7 nhanh hơn 108,1% |
-| reverse | 10.000 | 0,127 | 0,120 | cutoff 10 nhanh hơn 5,1% |
-| reverse | 100.000 | 1,520 | 1,538 | cutoff 7 nhanh hơn 1,1% |
-| duplicates | 1.000 | 0,013 | 0,011 | cutoff 10 nhanh hơn 12,7% |
-| duplicates | 10.000 | 0,315 | 0,283 | cutoff 10 nhanh hơn 10,2% |
-| duplicates | 100.000 | 3,565 | 3,548 | cutoff 10 nhanh hơn 0,5% |
+| random | 1.000 | 0,084 | 0,029 | cutoff 10 nhanh hơn 65,1% |
+| random | 10.000 | 0,572 | 0,888 | cutoff 7 nhanh hơn 55,1% |
+| random | 100.000 | 7,411 | 7,302 | cutoff 10 nhanh hơn 1,5% |
+| sorted | 1.000 | 0,010 | 0,008 | cutoff 10 nhanh hơn 20,8% |
+| sorted | 10.000 | 0,119 | 0,109 | cutoff 10 nhanh hơn 8,8% |
+| sorted | 100.000 | 1,573 | 1,495 | cutoff 10 nhanh hơn 4,9% |
+| reverse | 1.000 | 0,011 | 0,011 | xấp xỉ bằng nhau (6,1%) |
+| reverse | 10.000 | 0,318 | 0,170 | cutoff 10 nhanh hơn 46,7% |
+| reverse | 100.000 | 1,715 | 1,653 | cutoff 10 nhanh hơn 3,6% |
+| duplicates | 1.000 | 0,013 | 0,011 | cutoff 10 nhanh hơn 15,5% |
+| duplicates | 10.000 | 0,340 | 0,292 | cutoff 10 nhanh hơn 14,2% |
+| duplicates | 100.000 | 3,680 | 3,785 | cutoff 7 nhanh hơn 2,9% |
 
-**Nhận xét:** Trên 12 kịch bản, cutoff 10 nhanh hơn cutoff 7 trong **9/12 trường hợp**. Tuy nhiên, trên dữ liệu giảm dần (reverse) ở n = 1.000, cutoff 7 nhanh hơn rất đáng kể (0,011 ms so với 0,023 ms). Điều này có thể do với mảng giảm dần, Insertion Sort phải thực hiện nhiều phép dịch chuyển nhất (worst-case O(k²)), và khi cutoff = 10 thì mảng con lớn hơn khiến chi phí bậc hai tăng rõ rệt. Với kích thước lớn hơn, sự khác biệt giữa 7 và 10 không còn đáng kể (< 5%).
+**Nhận xét:** Trên 12 kịch bản, cutoff 10 nhanh hơn hoặc xấp xỉ bằng cutoff 7 trong **10/12 trường hợp**. Chỉ có 2 trường hợp cutoff 7 nhanh hơn rõ rệt: random n=10.000 (chênh 55,1%, có thể do nhiễu đo — giá trị cutoff 10 ở đây bất thường cao so với xu hướng) và duplicates n=100.000 (chênh chỉ 2,9%, không đáng kể). Với kích thước lớn (n=100.000), hai giá trị cutoff cho hiệu năng gần nhau (chênh < 5%), cho thấy sự khác biệt giữa 7 và 10 không có ý nghĩa thực tế ở dữ liệu lớn.
+
+**Lưu ý về nhiễu:** Một số kết quả ở kích thước nhỏ (n=1.000) và trung bình (n=10.000) cho thấy nhiễu đáng kể — ví dụ random n=10.000 cutoff=10 đo được 0,888 ms cao bất thường so với cutoff=7 (0,572 ms) và cutoff=16 (0,600 ms). Điều này là đặc trưng của microbenchmark khi thời gian đo quá nhỏ, dễ bị ảnh hưởng bởi GC, JIT recompilation, hoặc tiến trình nền.
 
 ### 5.2. Cutoff tốt nhất theo từng dạng dữ liệu
 
-- **random, sorted, duplicates:** Cutoff tốt nhất có xu hướng **tăng dần** khi kích thước mảng tăng, nằm trong khoảng **48–64**. Với ba dạng dữ liệu này, Insertion Sort hoạt động hiệu quả trên mảng con lớn hơn nhờ:
-  - `sorted`: Insertion Sort đạt O(k) trên dữ liệu đã sắp — cutoff lớn rất có lợi.
-  - `duplicates`: Nhiều giá trị trùng → nhiều phần tử "gần đúng vị trí" → Insertion Sort ít dịch chuyển.
-  - `random`: Lợi ích từ việc giảm overhead đệ quy và tận dụng cache vẫn bù đắp được chi phí O(k²) của Insertion Sort khi k ≤ 64.
+- **random:** Cutoff tốt nhất nằm trong khoảng **48–64**. Thời gian giảm đều đặn khi cutoff tăng từ 1 lên 64 (đặc biệt rõ ở n=100.000: 8,301 ms → 6,439 ms). Insertion Sort trên dữ liệu ngẫu nhiên có chi phí trung bình O(k²/4), vẫn thấp hơn overhead đệ quy Merge Sort khi k ≤ 64.
 
-- **reverse:** Cutoff tốt nhất nằm trong khoảng **7–16**, thấp hơn rõ rệt. Đây là worst-case của Insertion Sort: mỗi phần tử phải dịch chuyển đến đầu mảng con, tổng chi phí O(k²) lớn nhất. Khi cutoff > 16, thời gian **tăng mạnh** — đặc biệt ở n = 100.000, cutoff 64 (2,381 ms) thậm chí chậm hơn cutoff 1 (2,034 ms).
+- **sorted:** Cutoff tốt nhất nằm trong khoảng **48–64**. Insertion Sort đạt O(k) trên dữ liệu đã sắp — cutoff lớn rất có lợi. Tốc độ cải thiện lên đến 3,57× so với cutoff = 1.
+
+- **reverse:** Cutoff tốt nhất chỉ **10–16**, thấp hơn rõ rệt so với các dạng khác. Đây là worst-case của Insertion Sort: mỗi phần tử phải dịch chuyển đến đầu mảng con, tổng chi phí O(k²). Khi cutoff > 16, thời gian **tăng mạnh** — đặc biệt ở n=100.000, cutoff 64 (2,660 ms) **chậm hơn** cutoff 1 (2,442 ms), tức kỹ thuật cutoff phản tác dụng ở mức này.
+
+- **duplicates:** Cutoff tốt nhất nằm trong khoảng **16–64** tùy kích thước. Nhiều giá trị trùng → nhiều phần tử "gần đúng vị trí" → Insertion Sort ít dịch chuyển. Tuy nhiên ở n=100.000, cutoff 64 (3,136 ms) đã bắt đầu chậm hơn cutoff 32 (2,934 ms), cho thấy có một "đỉnh" tối ưu rồi giảm.
 
 ### 5.3. Mức chênh lệch và tính ổn định
 
-- Giữa cutoff = 1 (Merge Sort thuần) và cutoff tốt nhất, tốc độ cải thiện từ **1,29× đến 8,70×**, cho thấy kỹ thuật cutoff luôn mang lại lợi ích rõ rệt.
+- Giữa cutoff = 1 (Merge Sort thuần) và cutoff tốt nhất, tốc độ cải thiện từ **1,29× đến 6,33×**, cho thấy kỹ thuật cutoff luôn mang lại lợi ích rõ rệt.
 - Vùng cutoff **10–32** là "vùng an toàn": hiệu năng khá gần mức tối ưu trên hầu hết các dạng dữ liệu (trừ reverse ở cutoff > 24).
-- Phương pháp đo bằng trung vị giúp loại bỏ outlier do GC (garbage collection) hay các tiến trình nền, tăng tính ổn định. Tuy nhiên, với n = 1.000, thời gian đo rất nhỏ (< 0,05 ms) nên nhiễu tương đối lớn hơn — một số biến động bất thường (ví dụ: reverse n = 1.000 cutoff = 10 đột ngột tăng lên 0,023 ms) có thể do yếu tố bên ngoài.
+- Phương pháp đo bằng trung vị giúp loại bỏ outlier do GC hay các tiến trình nền. Tuy nhiên, kết quả vẫn có nhiễu đáng kể ở kích thước nhỏ — ví dụ:
+  - random n=1.000 cutoff=7 (0,084 ms) cao bất thường so với cutoff=4 (0,055 ms) và cutoff=10 (0,029 ms).
+  - random n=10.000 cutoff=10 (0,888 ms) vọt cao so với xu hướng xung quanh.
+  - reverse n=10.000 cutoff=24 (0,346 ms) đột biến giữa cutoff=16 (0,136 ms) và cutoff=32 (0,169 ms).
+- Những biến động này cho thấy 31 lượt đo có thể chưa đủ để loại bỏ hết nhiễu, đặc biệt khi thời gian thực thi quá nhỏ (< 1 ms).
 
 ### 5.4. Hạn chế của phép đo
 
@@ -156,18 +163,20 @@ Tìm cutoff cho biến thể Merge Sort dùng Insertion Sort ở các đoạn nh
 - **Kích thước mảng tối đa 100.000** — chưa thử nghiệm trên mảng hàng triệu phần tử, nơi yếu tố cache miss có thể thay đổi kết quả.
 - **Chỉ dùng kiểu `int`** — với kiểu dữ liệu khác (Object, String), chi phí so sánh (`compareTo`) cao hơn có thể thay đổi cutoff tối ưu.
 - **JVM warmup 10 lượt** có thể chưa đủ để JIT compiler tối ưu hóa hoàn toàn, đặc biệt với n nhỏ. JMH (Java Microbenchmark Harness) sẽ cho kết quả chính xác hơn.
-- Thời gian đo ở n = 1.000 rất nhỏ (vài chục µs), **độ phân giải `nanoTime()`** và jitter hệ thống có thể gây sai số đáng kể.
+- Thời gian đo ở n = 1.000 rất nhỏ (vài chục µs), **độ phân giải `nanoTime()`** và jitter hệ thống có thể gây sai số đáng kể — thể hiện qua các giá trị bất thường (outlier) đã nêu.
 - Seed cố định đảm bảo tính lặp lại nhưng chỉ tạo **một phân phối dữ liệu** cho mỗi dạng; nhiều seed khác nhau sẽ cho bức tranh đầy đủ hơn.
+- **Tiến trình nền** trên máy không được kiểm soát hoàn toàn trong lúc đo, có thể gây nhiễu.
 
 ## 6. Kết luận
 
 Trên cấu hình máy Intel i7-13620H / 16 GB / Windows 11 / Java 25:
 
 - **Cutoff được chọn: 16** — đây là giá trị **cân bằng tốt nhất** trên tất cả các dạng dữ liệu:
-  - Với random, sorted, duplicates: hiệu năng gần mức tối ưu (chênh lệch < 10% so với cutoff tốt nhất là 48–64).
-  - Với reverse (worst-case của Insertion Sort): vẫn nằm trong vùng an toàn, không bị suy giảm hiệu năng như cutoff ≥ 24.
+  - Với random, sorted, duplicates: hiệu năng gần mức tối ưu (chênh lệch < 15% so với cutoff tốt nhất là 48–64).
+  - Với reverse (worst-case của Insertion Sort): vẫn nằm trong vùng an toàn — cutoff 16 thực tế là cutoff tốt nhất cho reverse n=10.000 (0,136 ms), và chỉ chênh ~2% so với cutoff tốt nhất ở reverse n=100.000.
+  - Nếu tăng cutoff lên 32 hoặc 48, hiệu năng tốt hơn trên random/sorted nhưng **suy giảm rõ rệt trên reverse** (reverse n=100.000 cutoff=48 là 2,032 ms so với cutoff=10 là 1,653 ms — chậm hơn 23%).
 
-- **Giá trị giáo trình (7 và 10)** là hợp lý nhưng **bảo thủ**: trên máy hiện đại, cutoff lớn hơn (16–32) thường nhanh hơn nhờ cache L1 lớn hơn và branch prediction tốt hơn.
+- **Giá trị giáo trình (7 và 10)** là hợp lý nhưng **bảo thủ**: trên máy hiện đại, cutoff 10 nhất quán nhanh hơn cutoff 7 (10/12 kịch bản). Cutoff 16 tối ưu hơn cả hai.
 
 - **Lưu ý quan trọng:** Kết quả này chỉ áp dụng cho cấu hình máy cụ thể này. Không khái quát thành cutoff tối ưu cho mọi máy — cần chạy benchmark trên từng cấu hình để xác định giá trị phù hợp.
 
