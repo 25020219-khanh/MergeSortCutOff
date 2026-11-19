@@ -1,0 +1,9 @@
+Mergesort và Quicksort có chung một cải tiến là CUTOFF dùng Insertion sort đối với mảng độ dài nhỏ. Các phiên bản giáo trình nhắc đến độ dài CUTOFF 7 (cũ) và 10 (mới).  Làm sao biết được giá trị nào thì phù hợp ? Làm thí nghiệm và đo thử.
+Bạn hãy làm thí nghiệm tìm giá trị CUTOFF tốt nhất đối với cấu hình máy của bạn và cài đặt mergesort mà bạn dựng từ nội dung bài giảng. 
+Bạn được dùng AI để thảo luận, viết script chạy thí nghiệm, xây dựng bộ dữ liệu test. Bạn cần tự mình dựng cài đặt mergesort từ nội dung bài giảng, không dùng các cài đặt khác. Xem lại chủ đề 1.3. Algorithm Analysis để ôn tập về thí nghiệm và thống kê kết quả thí nghiệm.
+
+Sản phẩm nộp gồm có:
+Báo cáo thí nghiệm: mô tả thí nghiệm, phân tích tổng kết kết quả (lập bảng thống kê, vẽ đồ thị…). 
+Cài đặt mergesort và các script chạy thí nghiệm
+bộ dữ liệu thí nghiệm
+log chat với AI (nếu có)
